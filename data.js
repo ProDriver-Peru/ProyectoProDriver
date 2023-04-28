@@ -3,10 +3,10 @@ module.exports = function()
   var data = {
     usuario:[
       {
-        id:"C001",
+        id:"luifs@gmail.com",
         rol: "Conductor",
         username: "Luis Felipe",
-        password: "#412$",
+        password: "1",
         email: "luifs@gmail.com",
         name: "Luis Felipe",
         lastName: "Sanchez Faria",

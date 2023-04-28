@@ -17,10 +17,20 @@ import { MatDatepickerModule} from '@angular/material/datepicker'
 import { MatNativeDateModule } from '@angular/material/core';
 
 import {MatMenuModule} from '@angular/material/menu';
+import { HomeComponent } from './component/home/home.component';
+import { LoginComponent } from './component/login/login.component';
+import { HeaderComponent } from './component/home/header/header.component';
+import { MenuComponent } from './component/home/menu/menu.component';
+import { PanelComponent } from './component/home/panel/panel.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    LoginComponent,
+    HeaderComponent,
+    MenuComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,

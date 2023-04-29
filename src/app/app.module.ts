@@ -22,6 +22,8 @@ import { LoginComponent } from './component/login/login.component';
 import { HeaderComponent } from './component/home/header/header.component';
 import { MenuComponent } from './component/home/menu/menu.component';
 import { PanelComponent } from './component/home/panel/panel.component';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatIcon, MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,8 @@ import { PanelComponent } from './component/home/panel/panel.component';
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatButtonToggleModule,
+    MatIconModule,
 
     //Editar
     ReactiveFormsModule,

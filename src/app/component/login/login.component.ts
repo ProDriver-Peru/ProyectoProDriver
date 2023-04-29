@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, NgForm } from '@angular/forms';
-import { ActivatedRoute, Params, Router } from '@angular/router';
+import { ActivatedRoute, Params, Router, Route } from '@angular/router';
 import { window } from 'rxjs';
 import { usuarioService } from 'src/app/service/usuario.service';
 import { Usuario } from 'src/model/usuario';
-
+import { Observable } from 'rxjs';
+import 'rxjs/Rx';
 
 @Component({
   selector: 'app-login',
@@ -35,12 +36,17 @@ export class LoginComponent implements OnInit {
 
   login(){
 
+
     this.usuarioService.getCredencial(this.form.value['email']).subscribe(data=>{
       {
-        {
-          this.credetencialCheck(data.email, data.password);
-        }
+         this.credetencialCheck(data.email, data.password);
       }
+      {
+        this.router.navigate(['home']).then(()=>{
+          window.location.reload();
+        })
+      }
+
     })
 
   }
@@ -53,7 +59,7 @@ export class LoginComponent implements OnInit {
     if (this.usuario.email == email && this.usuario.password == password) {
 
       this.credential = true;
-      console.log("Bien")
+      console.log("Bien");
 
     }
 

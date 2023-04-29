@@ -6,9 +6,10 @@
 #right-panel {
   position: relative;
   top: 0;
-  left: calc(100vw - 350px);
+  left: calc(100vw - 280px);
+  border-left: 1px solid #000000;
   background-color: #BFDCEB;
-  width: 350px;
+  width: 279px;
   height: calc(100vh);
   display: flex;
   flex-direction: column;
@@ -19,7 +20,8 @@
   background-color: #02aaee;
   color: #fff;
   width: calc(100% - 20px);
-  height: 400px;
+  height:325px;
+  border-bottom: 1px solid #000000;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -27,14 +29,15 @@
 }
 
 #perfil-image-container {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   overflow: hidden;
   margin: 50px 10px 10px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #000000;
 }
 
 #perfil-information {
@@ -50,18 +53,18 @@
 }
 
 #perfil-name {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
-  margin: 10px;
+  margin: 3px;
 }
 
 #perfil-lastname {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
-  margin: 10px;
+  margin: 0;
 }
 
 #perfil-editar {
-  margin-top: 10px;
+  margin-top: 15px;
   color: #fff;
 }

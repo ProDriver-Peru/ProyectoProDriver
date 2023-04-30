@@ -9,9 +9,9 @@
   z-index: 50;
   padding: 10px;
   top: 75px;
-  left: 74px;
-  width: calc(100% - 375px);
-  height: calc(100% - 100px);
+  left: 90px;
+  width: calc(100% - 390px);
+  height: calc(100% - 75px);
   background-color: #e1e1e1;
   color: #000;
   overflow-y: scroll;

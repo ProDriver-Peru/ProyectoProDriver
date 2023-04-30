@@ -10,7 +10,7 @@
   top: 0;
   left: 0;
   width: calc(100vw - 280px);
-
+  height: 75px;
 }
 
 #header-title {
@@ -24,10 +24,9 @@
 }
 
 #container-logo {
-height: 74px;
+height: 75px;
 width: 74px;
-border-bottom: 1px solid #000000;
-border-right: 1px solid #000000;
+border-bottom: 1px solid #009688;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -41,16 +40,15 @@ justify-content: center;
 #container-title {
   height: 74px;
   width: 179px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #009688;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 h1 {
-  top: calc(50% - 15px);
   margin: 0;
-  margin-left: 25px;
+  margin-left: 15px;
   font-size: 25px;
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -61,7 +59,7 @@ h1 {
 #header-left {
   height: 74px;
   width: calc(100% - 255px);
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #009688;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -5,40 +5,55 @@
 }
 
 #menu {
-
   position: fixed;
   top: 75px;
   left: 0;
-  width: 74px;
+  width: 89px;
   height: calc(100vh - 77px);
   z-index: 100;
-  border-right: 1px solid #000000;
-  background-color: hsl(197, 98%, 47%);
+  border-right: 1px solid #0b7ca8;
+  background-color: #02abed;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   border-radius: 0;
   padding-top: 2px;;
-
 }
 
-#menu-button {
-  height: 50px;
-  width: 50px;
-  margin:10px 0;
+.menu-button-icon {
+  color: #000000;
+  font-size: 30px;
+  width: 40px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10%;
+}
+.mat-button-toggle-checked {
+  background-color: #009688;
+  color: #02abed;
 }
 
-#menu-button-icon {
-  color: #667080;
-  height: 20px;
-  width: 20px;
+.mat-button-toggle-checked .menu-button-icon {
+  color: #ffffff;
+}
+
+.mat-button-toggle-group {
+  margin-top: 15px;
+}
+
+#setting-menu {
+  margin-bottom: 20px;
+}
+
+#settings-button-icon {
+  color: #ffffff;
+  font-size: 30px;
+  width: 40px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 33px;
 }

@@ -1,23 +1,59 @@
-<mat-button-toggle-group id="menu" name="fontStyle" aria-label="Font Style">
-  <mat-button-toggle id="menu-button" value="bold">
-    <mat-icon id="menu-button-icon"
+<nav id="menu">
+  <mat-button-toggle-group
+    #toggleBtn="matButtonToggleGroup"
+    name="fontStyle"
+    aria-label="Font Style"
+    vertical
+  >
+    <mat-button-toggle id="menu-button" value="home">
+      <mat-icon
+        class="menu-button-icon"
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="home"
+      ></mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle id="menu-button" value="list">
+      <mat-icon
+        class="menu-button-icon"
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="receipt_long"
+      ></mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle id="menu-button" value="notifications">
+      <mat-icon
+        class="menu-button-icon"
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="notifications"
+      ></mat-icon>
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+
+  <button id="setting-menu" mat-button [matMenuTriggerFor]="menu">
+    <mat-icon
+      id="settings-button-icon"
       aria-hidden="false"
       aria-label="Example home icon"
-      fontIcon="home"
+      fontIcon="settings"
     ></mat-icon>
-  </mat-button-toggle>
-  <mat-button-toggle id="menu-button" value="italic">
-    <mat-icon id="menu-button-icon"
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon
       aria-hidden="false"
       aria-label="Example home icon"
-      fontIcon="receipt_long"
+      fontIcon="info"
     ></mat-icon>
-  </mat-button-toggle>
-  <mat-button-toggle id="menu-button" value="underline">
-    <mat-icon id="menu-button-icon"
+    Acerca de
+    </button>
+    <button mat-menu-item>Cerrar sesión
+      <mat-icon
       aria-hidden="false"
       aria-label="Example home icon"
-      fontIcon="notifications"
+      fontIcon="logout"
     ></mat-icon>
-  </mat-button-toggle>
-</mat-button-toggle-group>
+    </button>
+  </mat-menu>
+</nav>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro Reclutador</title>
+
+</head>
+
+<body>
+
+  <form [formGroup]="form" (submit)="aceptar()">
+    <mat-form-field class="example-full-width">
+      <mat-label>Username</mat-label>
+      <input matInput placeholder="Código" formControlName="id">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>description</mat-label>
+      <input matInput required placeholder="Name" formControlName="description">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>licenseTypeRequired</mat-label>
+      <input matInput required placeholder="Email" formControlName="licenseTypeRequired">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>experienceYear</mat-label>
+      <input matInput required placeholder="Email" formControlName="experienceYear">
+    </mat-form-field>
+
+    <br>
+
+
+    <button mat-raised-button type="submit" color="primary" routerLink="/listarPropuesta">Aceptar</button>
+
+    <button mat-raised-button color="warn" routerLink="/authors">Cancelar</button>
+
+    <p>{{mensaje}}</p>
+
+  </form>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro Reclutador</title>
+
+</head>
+
+<body>
+
+  <form [formGroup]="form" (submit)="aceptar()">
+    <mat-form-field class="example-full-width">
+      <mat-label>Username</mat-label>
+      <input matInput placeholder="Código" formControlName="id">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Password</mat-label>
+      <input matInput required placeholder="Name" formControlName="password">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Rol</mat-label>
+      <input matInput required placeholder="Email" formControlName="rol">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>DNI</mat-label>
+      <input matInput required placeholder="Email" formControlName="dni">
+    </mat-form-field>
+
+    <br>
+
+    <br>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Name</mat-label>
+      <input matInput required placeholder="Email" formControlName="name">
+    </mat-form-field>
+
+    <br>
+
+    <br>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Apellido</mat-label>
+      <input matInput required placeholder="Email" formControlName="lastName">
+    </mat-form-field>
+
+    <br>
+
+    <br>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput required placeholder="Email" formControlName="email">
+    </mat-form-field>
+
+    <br>
+
+    <br>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>RUC</mat-label>
+      <input matInput required placeholder="Email" formControlName="ruc">
+    </mat-form-field>
+
+    <br>
+
+    <button mat-raised-button type="submit" color="primary">Aceptar</button>
+
+    <button mat-raised-button color="warn" routerLink="/authors">Cancelar</button>
+
+    <p>{{mensaje}}</p>
+
+  </form>
+
+</body>
+
+</html>

@@ -2,6 +2,7 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { environment } from "src/environment/environment";
+import { propuesta } from "src/model/propuesta";
 import { Usuario } from "src/model/usuario";
 
 const baseUrl = environment.base;
@@ -10,25 +11,20 @@ const baseUrl = environment.base;
   providedIn: 'root'
 })
 
-export class usuarioService{
+export class propuestaService{
 
-  private urlUsuario = `${baseUrl}/usuario`;//alt+96
+  private urlPropuesta = `${baseUrl}/jobOffer`;//alt+96
 
   private id:string = "";
 
   constructor(private http:HttpClient) { } //inyectar httpClient
 
-  getCredencial(email:string){
-    this.id = email;
-    return this.http.get<Usuario>(`${this.urlUsuario}/${email}`);
+  insertinsertPropuesta(propuesta:propuesta){
+    return this.http.post(this.urlPropuesta, propuesta);
   }
 
-  returnEmail(){
-    return this.id;
-  }
-
-  insertUsuario(usuario:Usuario){
-    return this.http.post(this.urlUsuario, usuario);
+  listPropues():Observable<any>{
+    return this.http.get<propuesta[]>(this.urlPropuesta)
   }
 
 

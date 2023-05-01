@@ -1,4 +1,4 @@
-export class Usuario
+export class conductor
 {
   id:string="";
   rol: string = "";
@@ -6,7 +6,8 @@ export class Usuario
   email: string = "";
   name: string = "";
   lastName: string = "";
-  ruc: Number = 0;
-  empresa: string = "";
+  dni: Number = 0;
+  license: string = "";
+  descripcion: string = "";
 
 }

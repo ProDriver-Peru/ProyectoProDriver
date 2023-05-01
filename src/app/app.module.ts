@@ -24,6 +24,10 @@ import { MenuComponent } from './component/home/menu/menu.component';
 import { PanelComponent } from './component/home/panel/panel.component';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatIcon, MatIconModule} from '@angular/material/icon';
+import { RegisterComponent } from './component/register/register.component';
+import { InicioReclutComponent } from './component/inicio-reclut/inicio-reclut.component';
+import { PropuestaComponent } from './component/propuesta/propuesta.component';
+import { ListPropuestaComponent } from './component/list-propuesta/list-propuesta.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import {MatIcon, MatIconModule} from '@angular/material/icon';
     LoginComponent,
     HeaderComponent,
     MenuComponent,
-    PanelComponent
+    PanelComponent,
+    RegisterComponent,
+    InicioReclutComponent,
+    PropuestaComponent,
+    ListPropuestaComponent
   ],
   imports: [
     BrowserModule,

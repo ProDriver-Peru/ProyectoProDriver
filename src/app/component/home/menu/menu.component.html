@@ -1,59 +1,25 @@
-<nav id="menu">
-  <mat-button-toggle-group
-    #toggleBtn="matButtonToggleGroup"
-    name="fontStyle"
-    aria-label="Font Style"
-    vertical
-  >
-    <mat-button-toggle id="menu-button" value="home">
-      <mat-icon
-        class="menu-button-icon"
-        aria-hidden="false"
-        aria-label="Example home icon"
-        fontIcon="home"
-      ></mat-icon>
-    </mat-button-toggle>
-    <mat-button-toggle id="menu-button" value="list">
-      <mat-icon
-        class="menu-button-icon"
-        aria-hidden="false"
-        aria-label="Example home icon"
-        fontIcon="receipt_long"
-      ></mat-icon>
-    </mat-button-toggle>
-    <mat-button-toggle id="menu-button" value="notifications">
-      <mat-icon
-        class="menu-button-icon"
-        aria-hidden="false"
-        aria-label="Example home icon"
-        fontIcon="notifications"
-      ></mat-icon>
-    </mat-button-toggle>
-  </mat-button-toggle-group>
-
-  <button id="setting-menu" mat-button [matMenuTriggerFor]="menu">
-    <mat-icon
-      id="settings-button-icon"
+<mat-button-toggle-group id="menu" name="fontStyle" aria-label="Font Style">
+  <mat-button-toggle id="menu-button" value="bold">
+    <mat-icon id="menu-button-icon"
       aria-hidden="false"
       aria-label="Example home icon"
-      fontIcon="settings"
+      fontIcon="home"
+      routerLink="/inicior"
     ></mat-icon>
-  </button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item>
-      <mat-icon
+  </mat-button-toggle>
+  <mat-button-toggle id="menu-button" value="italic">
+    <mat-icon id="menu-button-icon"
       aria-hidden="false"
       aria-label="Example home icon"
-      fontIcon="info"
+      fontIcon="receipt_long"
+      routerLink="/listarPropuesta"
     ></mat-icon>
-    Acerca de
-    </button>
-    <button mat-menu-item>Cerrar sesión
-      <mat-icon
+  </mat-button-toggle>
+  <mat-button-toggle id="menu-button" value="underline">
+    <mat-icon id="menu-button-icon"
       aria-hidden="false"
       aria-label="Example home icon"
-      fontIcon="logout"
+      fontIcon="notifications"
     ></mat-icon>
-    </button>
-  </mat-menu>
-</nav>
+  </mat-button-toggle>
+</mat-button-toggle-group>

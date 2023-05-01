@@ -9,27 +9,35 @@ import { ListPropuestaComponent } from './component/list-propuesta/list-propuest
 
 const routes: Routes = [
   {
-    path: 'login', component:LoginComponent,
+    path: 'login',
+    component: LoginComponent,
   },
   {
-    path: 'home', component:HomeComponent,
+    path: 'register',
+    component: RegisterComponent,
   },
   {
-    path: 'register', component:RegisterComponent
+    path: 'home',
+    component: HomeComponent,
+    children: [
+      {
+        path: 'inicio',
+        component: InicioReclutComponent,
+      },
+      {
+        path: 'propuesta',
+        component: PropuestaComponent,
+      },
+      {
+        path: 'listarPropuesta',
+        component: ListPropuestaComponent,
+      },
+    ],
   },
-  {
-    path: 'inicior', component:InicioReclutComponent
-  },
-  {
-    path:'propuesta', component:PropuestaComponent
-  },
-  {
-    path:'listarPropuesta', component:ListPropuestaComponent
-  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

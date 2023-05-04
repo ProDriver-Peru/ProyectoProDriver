@@ -19,7 +19,7 @@ export class propuestaService{
 
   constructor(private http:HttpClient) { } //inyectar httpClient
 
-  insertinsertPropuesta(propuesta:propuesta){
+  insertPropuesta(propuesta:propuesta){
     return this.http.post(this.urlPropuesta, propuesta);
   }
 

@@ -1,0 +1,54 @@
+header{
+  font-weight: bold;
+  color:#667080;
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+h1{
+  font-size: 30px;
+  padding-bottom: 5px;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.example-full-width{
+
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  margin: 0px 40%   ;
+
+}
+
+button{
+  border: 2px solid #035397;
+  padding: 10px;
+  width: auto;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.buttonContainer{
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  padding: 0px 40%;
+}
+
+.textArea{
+  max-width: 530px;
+  min-width: 530px;
+}
+
+.mat-form-field{
+  width: 500px;
+}

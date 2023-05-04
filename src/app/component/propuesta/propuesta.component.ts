@@ -34,14 +34,14 @@ export class PropuestaComponent implements OnInit {
     this.propuesta.licenseTypeRequired = this.form.value['licenseTypeRequired'];
     this.propuesta.experienceYear = this.form.value['experienceYear'];
     this.propuesta.appliers = 0;
-    this.propuesta.idEmploye = this.form.value['idEmploye'];
+    this.propuesta.idEmploye = "RI";
 
     if (this.form.valid) {
-      this.propuestaService.insertinsertPropuesta(this.propuesta).subscribe(data=>{
-        this.router.navigate(['inicior']).then(()=>{
+      this.propuestaService.insertPropuesta(this.propuesta).subscribe(data=>
+        this.router.navigate(['/home/listarPropuesta']).then(()=>{
           window.location.reload();
         })
-      })
+      )
     }
 
   }

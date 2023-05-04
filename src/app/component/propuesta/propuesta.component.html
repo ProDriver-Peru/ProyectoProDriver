@@ -11,6 +11,10 @@
 
 <body>
 
+<header>
+  <h1>Crear propuesta laboral</h1>
+</header>
+
   <form [formGroup]="form" (submit)="aceptar()">
     <mat-form-field class="example-full-width">
       <mat-label>Username</mat-label>
@@ -20,30 +24,30 @@
     <br>
 
     <mat-form-field class="example-full-width">
-      <mat-label>description</mat-label>
-      <input matInput required placeholder="Name" formControlName="description">
+      <mat-label>Descripción</mat-label>
+      <textarea matInput required placeholder="Descrpción" formControlName="description"></textarea>
     </mat-form-field>
 
     <br>
 
     <mat-form-field class="example-full-width">
-      <mat-label>licenseTypeRequired</mat-label>
-      <input matInput required placeholder="Email" formControlName="licenseTypeRequired">
+      <mat-label>Tipo de Licencia</mat-label>
+      <input matInput required placeholder="Licencia" formControlName="licenseTypeRequired">
     </mat-form-field>
 
     <br>
 
     <mat-form-field class="example-full-width">
-      <mat-label>experienceYear</mat-label>
-      <input matInput required placeholder="Email" formControlName="experienceYear">
+      <mat-label>Año de experiencia</mat-label>
+      <input matInput required placeholder="Año de experiencia" formControlName="experienceYear">
     </mat-form-field>
 
     <br>
 
 
-    <button mat-raised-button type="submit" color="primary" routerLink="/listarPropuesta">Aceptar</button>
+    <button mat-raised-button type="submit" color="primary">Publicar</button>
 
-    <button mat-raised-button color="warn" routerLink="/authors">Cancelar</button>
+    <button mat-raised-button color="warn" routerLink="/home/inicio">Cancelar</button>
 
     <p>{{mensaje}}</p>
 

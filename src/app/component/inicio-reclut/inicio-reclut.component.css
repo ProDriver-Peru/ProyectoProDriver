@@ -4,3 +4,127 @@
   margin-right: 25%;
   margin-bottom: 0%;
 }
+header{
+  font-weight: bold;
+  color:#667080;
+}
+h1{
+  font-weight: bold;
+  color:#667080;
+  margin: 20px;
+}
+.seccion{
+  margin: 20px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+article{
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 350px;
+  margin: 20px;
+  float: left;
+  background: #d4d1d1;
+}
+img {
+  width: 22%;
+  margin: 11px;
+  float: right;
+}
+.contenido {
+  float: left;
+  width: 60%;
+ margin: 20px;
+ color:#667080;
+}
+.boton-ver-perfil {
+  background-color: #009688; /* Color de fondo del botón */
+  border: none; /* Borde del botón */
+  color: white; /* Color del texto del botón */
+  padding: 10px 20px; /* Espacio alrededor del texto del botón */
+  text-align: center; /* Alineación del texto del botón */
+  text-decoration: none; /* Estilo de subrayado del texto del botón */
+  display: inline-block; /* Mostrar el botón como un elemento en línea */
+  font-size: 16px; /* Tamaño de letra del botón */
+  margin: 10px 10px; /* Margen superior e inferior del botón */
+  margin-top: -10px;
+  cursor: pointer; /* Cambiar el cursor al pasar el ratón sobre el botón */
+  border-radius: 5px; /* Radio de borde del botón */
+
+}
+.barra-navegacion {
+display:flex;
+justify-content: center;
+align-items: center;
+position: relative;
+bottom: 0;
+margin-bottom: 20px;
+float:center;
+}
+
+.barra-navegacion ul {
+display: flex;
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.barra-navegacion li {
+margin: 0 5px;
+}
+
+.barra-navegacion a {
+display: block;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: #ccc;
+}
+
+.barra-navegacion a.activo {
+background-color: #333;
+box-shadow: 0px 0px 4px #333;
+}
+.content{
+width: 60%;
+height: 70%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.search-button {
+background-color: #02AAEE;
+border: none;
+border-radius: 5px;
+color: white;
+cursor: pointer;
+height: 40px;
+padding: 0 10px;
+}
+
+.fa-search:before {
+content: "\f002";
+}
+
+.search-button i {
+margin-right: 5px;
+}
+.actions{
+width: 60%;
+height: 15%;
+display: flex;
+align-items: center;
+justify-content:right;
+}
+.newcreate{
+background-color: #009688;
+border: none;
+border-radius: 5px;
+color: white;
+cursor: pointer;
+height: 40px;
+padding: 0 10px;
+}

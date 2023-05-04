@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
          this.credetencialCheck(data.email, data.password);
       }
       {
-        this.router.navigate(['inicior']).then(()=>{
+        this.router.navigate(['home']).then(()=>{
           window.location.reload();
         })
       }

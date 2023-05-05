@@ -1,4 +1,4 @@
 export const environment={
   production:false,
-  base:"https://vast-crab-hoodie.cyclic.app"
+  base:"http://localhost:5000"
 }

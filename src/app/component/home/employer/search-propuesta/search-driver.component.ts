@@ -7,11 +7,11 @@ import { conductorService } from 'src/app/service/conductor.service';
 import { conductor } from 'src/model/conductor';
 
 @Component({
-  selector: 'app-search-propuesta',
-  templateUrl: './search-propuesta.component.html',
-  styleUrls: ['./search-propuesta.component.css']
+  selector: 'app-search-driver',
+  templateUrl: './search-driver.component.html',
+  styleUrls: ['./search-driver.component.css']
 })
-export class SearchPropuestaComponent implements OnInit {
+export class SearchDriverComponent implements OnInit {
 
   lista:conductor[]=[];
   displayedColumns = ['name','lastName','license','descripcion'];

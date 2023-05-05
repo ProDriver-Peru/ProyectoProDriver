@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './component/login/login.component';
 import { HomeComponent } from './component/home/home.component';
-import { RegisterComponent } from './component/register/register.component';
-import { InicioReclutComponent } from './component/inicio-reclut/inicio-reclut.component';
-import { PropuestaComponent } from './component/propuesta/propuesta.component';
-import { ListPropuestaComponent } from './component/list-propuesta/list-propuesta.component';
-import { SearchPropuestaComponent } from './component/search-propuesta/search-propuesta.component';
+import { RegisterComponent } from './component/login/register/register.component';
+import { InicioReclutComponent } from './component/home/employer/inicio-reclut/inicio-reclut.component';
+import { PropuestaComponent } from './component/home/employer/propuesta/propuesta.component';
+import { ListPropuestaComponent } from './component/home/employer/list-propuesta/list-propuesta.component';
+import { SearchDriverComponent } from './component/home/employer/search-propuesta/search-driver.component';
 
 const routes: Routes = [
   {
@@ -38,8 +38,8 @@ const routes: Routes = [
         component: ListPropuestaComponent,
       },
       {
-        path: 'buscarPropuesta',
-        component: SearchPropuestaComponent
+        path: 'buscarConductor',
+        component: SearchDriverComponent
       }
     ],
   },

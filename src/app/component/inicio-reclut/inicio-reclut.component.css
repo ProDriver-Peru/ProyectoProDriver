@@ -20,6 +20,9 @@ h1{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  margin-top: 0%;
+
 }
 article{
   border: 1px solid black;

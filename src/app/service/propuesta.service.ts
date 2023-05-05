@@ -27,5 +27,8 @@ export class propuestaService{
     return this.http.get<propuesta[]>(this.urlPropuesta)
   }
 
+  delete(id:string){
+    return this.http.delete(this.urlPropuesta+"/"+id);
+  }
 
 }

@@ -6,8 +6,13 @@ import { RegisterComponent } from './component/register/register.component';
 import { InicioReclutComponent } from './component/inicio-reclut/inicio-reclut.component';
 import { PropuestaComponent } from './component/propuesta/propuesta.component';
 import { ListPropuestaComponent } from './component/list-propuesta/list-propuesta.component';
+import { SearchPropuestaComponent } from './component/search-propuesta/search-propuesta.component';
 
 const routes: Routes = [
+  {
+    path:'', redirectTo:'/login',
+    pathMatch: 'full'
+  },
   {
     path: 'login',
     component: LoginComponent,
@@ -32,6 +37,10 @@ const routes: Routes = [
         path: 'listarPropuesta',
         component: ListPropuestaComponent,
       },
+      {
+        path: 'buscarPropuesta',
+        component: SearchPropuestaComponent
+      }
     ],
   },
 ];

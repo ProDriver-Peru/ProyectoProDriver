@@ -22,9 +22,7 @@ export class PropuestaComponent implements OnInit {
       id: new FormControl(),
       description: new FormControl('',Validators.required),
       licenseTypeRequired: new FormControl('',Validators.required),
-      experienceYear: new FormControl('',Validators.required),
-      appliers: new FormControl('',Validators.required),
-      id_employe: new FormControl('',Validators.required),
+      experienceYear: new FormControl('',Validators.required)
     })
   }
 
@@ -37,9 +35,11 @@ export class PropuestaComponent implements OnInit {
     this.propuesta.idEmploye = "RI";
 
     if (this.form.valid) {
+
       this.propuestaService.insertPropuesta(this.propuesta).subscribe(data=>
         this.router.navigate(['/home/listarPropuesta']).then(()=>{
           window.location.reload();
+
         })
       )
     }

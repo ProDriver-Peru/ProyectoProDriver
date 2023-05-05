@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { MessageService } from 'src/app/service/message.service';
 import { usuarioService } from 'src/app/service/usuario.service';
 
 @Component({
@@ -9,23 +10,21 @@ import { usuarioService } from 'src/app/service/usuario.service';
 })
 export class PanelComponent implements OnInit {
 
-  nombre:string="";
+  nombre:any;
   lastName:string="";
 
   email:string="";
 
-  constructor(private usuarioService:usuarioService, private router: Router, private route:ActivatedRoute){}
+  constructor(private usuarioService:usuarioService, private router: Router, private route:ActivatedRoute, private messageService: MessageService){
+    this.nombre="";
+  }
 
   ngOnInit(): void {
 
-    this.email = this.usuarioService.returnEmail();
-
-    console.log(this.email)
-
-    this.usuarioService.getCredencial(this.email).subscribe((data=>{
-      this.nombre=data.name,
-      this.lastName=data.lastName
-    }))
+    this.messageService.getMsg().subscribe((nombre:any)=>{
+      this.nombre=nombre;
+      console.log(nombre);
+    })
 
   }
 

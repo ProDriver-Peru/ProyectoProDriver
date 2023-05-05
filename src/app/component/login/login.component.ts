@@ -4,6 +4,7 @@ import { ActivatedRoute, Params, Router, Route } from '@angular/router';
 import { usuarioService } from 'src/app/service/usuario.service';
 import { Usuario } from 'src/model/usuario';
 import 'rxjs';
+import { MessageService } from 'src/app/service/message.service';
 
 @Component({
   selector: 'app-login',
@@ -19,7 +20,7 @@ export class LoginComponent implements OnInit {
 
   credential: boolean = false;
 
-  constructor(private usuarioService: usuarioService, private router: Router, private route:ActivatedRoute){}
+  constructor(private usuarioService: usuarioService, private router: Router, private route:ActivatedRoute, private messageService: MessageService){}
 
   ngOnInit(): void {
 
@@ -34,13 +35,15 @@ export class LoginComponent implements OnInit {
 
   login(){
 
-
     this.usuarioService.getCredencial(this.form.value['email']).subscribe(data=>{
       {
          this.credetencialCheck(data.email, data.password);
       }
       {
-        this.router.navigate(['home']).then(()=>{
+       this.messageService.sendMsg("nombre");
+      }
+      {
+        this.router.navigate(['/home/inicio']).then(()=>{
           window.location.reload();
         })
       }

@@ -6,7 +6,7 @@
       <!-- Position Column -->
       <ng-container matColumnDef="id">
         <mat-header-cell *matHeaderCellDef mat-sort-header>
-          Id.
+          Código Propuesta
         </mat-header-cell>
         <mat-cell *matCellDef="let element"> {{ element.id }} </mat-cell>
       </ng-container>
@@ -14,7 +14,7 @@
       <!-- Name Column -->
       <ng-container matColumnDef="description">
         <mat-header-cell *matHeaderCellDef mat-sort-header>
-          description
+          Descripción
         </mat-header-cell>
         <mat-cell *matCellDef="let element">
           {{ element.description }}
@@ -24,7 +24,7 @@
       <!-- Weight Column -->
       <ng-container matColumnDef="licenseTypeRequired">
         <mat-header-cell *matHeaderCellDef mat-sort-header>
-          licenseTypeRequired
+          Licencia Requerida
         </mat-header-cell>
         <mat-cell *matCellDef="let element">
           {{ element.licenseTypeRequired }}
@@ -34,7 +34,7 @@
       <!-- Weight Column -->
       <ng-container matColumnDef="experienceYear">
         <mat-header-cell *matHeaderCellDef mat-sort-header>
-          experienceYear
+          Años de experiencia
         </mat-header-cell>
         <mat-cell *matCellDef="let element">
           {{ element.experienceYear }}
@@ -44,7 +44,7 @@
       <!-- Weight Column -->
       <ng-container matColumnDef="appliers">
         <mat-header-cell *matHeaderCellDef mat-sort-header>
-          appliers
+          Postulantes
         </mat-header-cell>
         <mat-cell *matCellDef="let element">
           {{ element.appliers }}
@@ -54,10 +54,24 @@
       <!-- Weight Column -->
       <ng-container matColumnDef="idEmploye">
         <mat-header-cell *matHeaderCellDef mat-sort-header>
-          idEmploye
+          Código Empleado
         </mat-header-cell>
         <mat-cell *matCellDef="let element">
           {{ element.idEmploye }}
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="editar">
+        <mat-header-cell *matHeaderCellDef> Editar </mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          <button mat-raised-button color="warn" [routerLink]="['/authors/edicion',element.id]">Actualizar</button>
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="eliminar">
+        <mat-header-cell *matHeaderCellDef> Eliminar </mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          <button mat-raised-button color="warn" (click)="delete(element.id)">Eliminar</button>
         </mat-cell>
       </ng-container>
 

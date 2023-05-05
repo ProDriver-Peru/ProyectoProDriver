@@ -28,6 +28,7 @@ import { RegisterComponent } from './component/register/register.component';
 import { InicioReclutComponent } from './component/inicio-reclut/inicio-reclut.component';
 import { PropuestaComponent } from './component/propuesta/propuesta.component';
 import { ListPropuestaComponent } from './component/list-propuesta/list-propuesta.component';
+import { SearchPropuestaComponent } from './component/search-propuesta/search-propuesta.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ListPropuestaComponent } from './component/list-propuesta/list-propuest
     RegisterComponent,
     InicioReclutComponent,
     PropuestaComponent,
-    ListPropuestaComponent
+    ListPropuestaComponent,
+    SearchPropuestaComponent
   ],
   imports: [
     BrowserModule,

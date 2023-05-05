@@ -15,43 +15,56 @@
   <h1>Crear propuesta laboral</h1>
 </header>
 
-  <form [formGroup]="form" (submit)="aceptar()">
-    <mat-form-field class="example-full-width">
-      <mat-label>Username</mat-label>
-      <input matInput placeholder="Código" formControlName="id">
-    </mat-form-field>
+  <div class="proposal">
 
-    <br>
+    <h2>Grupo Gloria</h2>
 
-    <mat-form-field class="example-full-width">
-      <mat-label>Descripción</mat-label>
-      <textarea matInput required placeholder="Descrpción" formControlName="description"></textarea>
-    </mat-form-field>
+    <div class="proposal-form">
 
-    <br>
+      <div class="proposal-form-form">
+        <form [formGroup]="form" (submit)="aceptar()">
+          <mat-form-field class="example-full-width">
+            <mat-label>Username</mat-label>
+            <input matInput placeholder="Código" formControlName="id">
+          </mat-form-field>
 
-    <mat-form-field class="example-full-width">
-      <mat-label>Tipo de Licencia</mat-label>
-      <input matInput required placeholder="Licencia" formControlName="licenseTypeRequired">
-    </mat-form-field>
+          <br>
 
-    <br>
+          <mat-form-field class="example-full-width">
+            <mat-label>Descripción</mat-label>
+            <textarea matInput required placeholder="Descripción" formControlName="description"></textarea>
+          </mat-form-field>
 
-    <mat-form-field class="example-full-width">
-      <mat-label>Año de experiencia</mat-label>
-      <input matInput required placeholder="Año de experiencia" formControlName="experienceYear">
-    </mat-form-field>
+          <br>
 
-    <br>
+          <mat-form-field class="example-full-width">
+            <mat-label>Tipo de Licencia</mat-label>
+            <input matInput required placeholder="Licencia" formControlName="licenseTypeRequired">
+          </mat-form-field>
 
+          <br>
 
-    <button mat-raised-button type="submit" color="primary">Publicar</button>
+          <mat-form-field class="example-full-width">
+            <mat-label>Año de experiencia</mat-label>
+            <input matInput required placeholder="Año de experiencia" formControlName="experienceYear">
+          </mat-form-field>
 
-    <button mat-raised-button color="warn" routerLink="/home/inicio">Cancelar</button>
+          <br>
 
-    <p>{{mensaje}}</p>
+          <button mat-raised-button class="btn" type="submit" >Publicar</button>
 
-  </form>
+          <p>{{mensaje}}</p>
+
+        </form>
+      </div>
+
+      <div class="proposal-form-img">
+        <img src="assets/images/trabajo.png" alt="proposal imagen">
+      </div>
+
+    </div>
+
+  </div>
 
 </body>
 

@@ -15,7 +15,7 @@ export class ListPropuestaComponent implements OnInit {
 
 
   lista: propuesta[] = [];
-  displayedColumns = ['id','description','licenseTypeRequired','experienceYear','appliers','idEmploye'];
+  displayedColumns = ['id','description','licenseTypeRequired','experienceYear','appliers','idEmploye','editar','eliminar'];
   dataSource = new MatTableDataSource<propuesta>();
 
   @ViewChild(MatPaginator) paginator : MatPaginator;
@@ -33,6 +33,14 @@ export class ListPropuestaComponent implements OnInit {
   ngAfterViewInit(){  //dsp q la pagina esta cargada recomeinda material asignar estos valoers
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
+  }
+
+  delete(id:string){
+    this.propuestaService.delete(id).subscribe(()=>
+      this.router.navigate(['home/listarPropuesta']).then(()=>{
+        window.location.reload();
+      })
+    )
   }
 
 }

@@ -1,8 +1,5 @@
 .container{
-  margin-top: 10%;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-bottom: 0%;
+  padding: 30px;
 }
 header{
   font-weight: bold;
@@ -11,8 +8,27 @@ header{
 h1{
   font-weight: bold;
   color:#667080;
-  margin: 20px;
 }
+.descr {
+height:160px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.ficha {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+.driver-name {
+  font-weight: bold;
+  color:#667080;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
 .seccion{
   margin: 20px;
   margin-top: 40px;
@@ -40,8 +56,14 @@ img {
 .contenido {
   float: left;
   width: 60%;
- margin: 20px;
- color:#667080;
+  color:#667080;
+  overflow: hidden;
+  /*ellipsis but in a wrapped text*/
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6; /* number of lines to show */
+
 }
 .boton-ver-perfil {
   background-color: #009688; /* Color de fondo del botón */
@@ -92,7 +114,7 @@ background-color: #333;
 box-shadow: 0px 0px 4px #333;
 }
 .content{
-width: 60%;
+width: 800px;
 height: 70%;
 display: flex;
 align-items: center;

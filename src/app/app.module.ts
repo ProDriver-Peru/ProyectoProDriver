@@ -29,6 +29,9 @@ import { InicioReclutComponent } from './component/inicio-reclut/inicio-reclut.c
 import { PropuestaComponent } from './component/propuesta/propuesta.component';
 import { ListPropuestaComponent } from './component/list-propuesta/list-propuesta.component';
 import { SearchPropuestaComponent } from './component/search-propuesta/search-propuesta.component';
+import { DialogoComponent } from './component/list-propuesta/dialogo/dialogo.component';
+
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,8 @@ import { SearchPropuestaComponent } from './component/search-propuesta/search-pr
     InicioReclutComponent,
     PropuestaComponent,
     ListPropuestaComponent,
-    SearchPropuestaComponent
+    SearchPropuestaComponent,
+    DialogoComponent
   ],
   imports: [
     BrowserModule,
@@ -68,8 +72,10 @@ import { SearchPropuestaComponent } from './component/search-propuesta/search-pr
     ReactiveFormsModule,
 
     //Header
-    MatMenuModule
+    MatMenuModule,
 
+    //Dialogo
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

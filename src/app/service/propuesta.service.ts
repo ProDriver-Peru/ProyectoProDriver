@@ -3,7 +3,6 @@ import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { environment } from "src/environment/environment";
 import { propuesta } from "src/model/propuesta";
-import { Usuario } from "src/model/usuario";
 
 const baseUrl = environment.base;
 

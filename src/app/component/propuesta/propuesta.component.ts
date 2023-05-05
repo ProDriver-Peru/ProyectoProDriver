@@ -39,7 +39,6 @@ export class PropuestaComponent implements OnInit {
       this.propuestaService.insertPropuesta(this.propuesta).subscribe(data=>
         this.router.navigate(['/home/listarPropuesta']).then(()=>{
           window.location.reload();
-
         })
       )
     }

@@ -1,4 +1,4 @@
-/*General section*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 * {
@@ -128,7 +128,7 @@ nav {
     top: 0;
     z-index: 11;
 }
-/* Window scroll */
+
 .window-scroll {
     background: var(--color-primary);
     box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);

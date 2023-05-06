@@ -20,7 +20,5 @@ export class conductorService{
   listDrivers():Observable<any>{
     return this.http.get<conductor[]>(this.urlDriver)
   }
-
-
 }
 

@@ -7,7 +7,7 @@ export class conductor
   name: string = "";
   lastName: string = "";
   dni: Number = 0;
-  license: string = "";
+  licenseType: string = "";
   descripcion: string = "";
 
 }

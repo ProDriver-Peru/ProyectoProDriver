@@ -18,7 +18,7 @@ export class ListPropuestaComponent implements OnInit {
 
 
   lista: propuesta[] = [];
-  displayedColumns = ['id','description','licenseTypeRequired','experienceYear','appliers','idEmploye','editar','eliminar'];
+  displayedColumns = ['id','description','licenseTypeRequired','experienceYear','appliers','idEmploye','eliminar'];
   dataSource = new MatTableDataSource<propuesta>();
 
   @ViewChild(MatPaginator) paginator : MatPaginator;

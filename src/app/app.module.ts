@@ -53,10 +53,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
     FormsModule,
     HttpClientModule,
-
     BrowserAnimationsModule,
     MatTableModule,
     MatButtonModule,
@@ -69,14 +67,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatButtonToggleModule,
     MatIconModule,
     MatRadioModule,
-
-    //Editar
     ReactiveFormsModule,
-
-    //Header
     MatMenuModule,
-
-    //Dialogo
     MatDialogModule,
   ],
   providers: [],

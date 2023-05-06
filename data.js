@@ -89,7 +89,7 @@ module.exports = function () {
     ],
     conductor: [
       {
-        id: "Luissafa",
+        id: "1",
         rol: "Conductor",
         password: "1",
         email: "luifs@gmail.com",
@@ -101,7 +101,7 @@ module.exports = function () {
           "Henry Medina es un conductor de profesión con experiencia trabajando en empresas como Cruz del Sur, grupo Palomino, Multicosailor.",
       },
       {
-        id: "RaulJM",
+        id: "2",
         rol: "Conductor",
         password: "1",
         email: "raul@gmail.com",
@@ -112,7 +112,7 @@ module.exports = function () {
         descripcion: "Raul Jm es un conductor de profesión con experiencia.",
       },
       {
-        id: "henrydime",
+        id: "3",
         rol: "Conductor",
         dni: "75929231",
         name: "Henry Antonio",
@@ -125,7 +125,7 @@ module.exports = function () {
         license: "S69808980",
       },
       {
-        id: "diegoaguiro",
+        id: "4",
         dni: "54939207",
         name: "Diego",
         lastName: "Aguilar Rodriguez",
@@ -138,7 +138,7 @@ module.exports = function () {
         license: "Q97858990",
       },
       {
-        id: "marcosrode",
+        id: "5",
         rol: "conductor",
         dni: "09374519",
         name: "Marcos Javier",
@@ -151,7 +151,7 @@ module.exports = function () {
         license: "U04456981",
       },
       {
-        id: "lorenzoagmon",
+        id: "6",
         rol: "conductor",
         dni: "05678358",
         name: "Lorenzo",
@@ -164,7 +164,7 @@ module.exports = function () {
         license: "Q72154983",
       },
       {
-        id: "luismenquis",
+        id: "7",
         rol: "conductor",
         dni: "45666304",
         name: "Luis Arturo",
@@ -177,7 +177,7 @@ module.exports = function () {
         license: "Q748365220",
       },
       {
-        id: "mauricioroca",
+        id: "8",
         rol: "conductor",
         dni: "05748832",
         name: "Mauricio Antonio",

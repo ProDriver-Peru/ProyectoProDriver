@@ -5,16 +5,14 @@
     aria-label="Font Style"
     vertical
   >
-    <!--Button that make router link to a children of his parent in angular-->
-
     <mat-button-toggle id="menu-button" value="home" routerLink="inicio">
       <mat-icon
         class="menu-button-icon"
         aria-hidden="false"
-        aria-label="Example home icon"
         fontIcon="home"
       ></mat-icon>
     </mat-button-toggle>
+
     <mat-button-toggle
       id="menu-button"
       value="list"
@@ -23,15 +21,14 @@
       <mat-icon
         class="menu-button-icon"
         aria-hidden="false"
-        aria-label="Example home icon"
         fontIcon="receipt_long"
       ></mat-icon>
     </mat-button-toggle>
+
     <mat-button-toggle id="menu-button" value="notifications">
       <mat-icon
         class="menu-button-icon"
         aria-hidden="false"
-        aria-label="Example home icon"
         fontIcon="notifications"
       ></mat-icon>
     </mat-button-toggle>
@@ -41,23 +38,18 @@
     <mat-icon
       id="settings-button-icon"
       aria-hidden="false"
-      aria-label="Example home icon"
       fontIcon="settings"
     ></mat-icon>
   </button>
+
   <mat-menu #menu="matMenu">
     <a mat-menu-item href="https://prodriver-peru.github.io/" target="_blank">
-      <mat-icon
-        aria-hidden="false"
-        aria-label="Example home icon"
-        fontIcon="info"
-      ></mat-icon>
+      <mat-icon aria-hidden="false" fontIcon="info"></mat-icon>
       Acerca de
     </a>
     <a mat-menu-item href="#">
       <mat-icon
         aria-hidden="false"
-        aria-label="Example home icon"
         fontIcon="logout"
         routerLink="login"
       ></mat-icon>

@@ -1,70 +1,68 @@
-<div id="content">
-  <p>Inicio</p>
+<div class="container">
+  <h1>
+    <mat-icon
+      routerLink="/home/inicio"
+      class="menu-button-icon back-button"
+      aria-hidden="false"
+      fontIcon="arrow_back_ios"
+    ></mat-icon>
+    Búsqueda de conductores
+  </h1>
+  <mat-form-field>
+    <input matInput (keyup)="filtrar($event)" placeholder="Buscar" />
+  </mat-form-field>
 
-  <div class="container">
 
-    <mat-form-field>
-      <input matInput (keyup)="filtrar($event)" placeholder="Buscar">
-    </mat-form-field>
+  <div class="mat-elevation-z8">
+    <mat-table #table [dataSource]="dataSource" matSort>
 
-    <!--,'name','lastName','license','description'-->
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+          Name
+        </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{ element.name }} </mat-cell>
+      </ng-container>
 
-    <div class="mat-elevation-z8">
-      <mat-table #table [dataSource]="dataSource" matSort>
-        <!-- Position Column -->
-        <ng-container matColumnDef="name">
-          <mat-header-cell *matHeaderCellDef mat-sort-header>
-            Name
-          </mat-header-cell>
-          <mat-cell *matCellDef="let element"> {{ element.name }} </mat-cell>
-        </ng-container>
 
-        <!-- Name Column -->
-        <ng-container matColumnDef="lastName">
-          <mat-header-cell *matHeaderCellDef mat-sort-header>
-            Apellido
-          </mat-header-cell>
-          <mat-cell *matCellDef="let element">
-            {{ element.lastName }}
-          </mat-cell>
-        </ng-container>
+      <ng-container matColumnDef="lastName">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+          Apellido
+        </mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          {{ element.lastName }}
+        </mat-cell>
+      </ng-container>
 
-        <!-- Weight Column -->
-        <ng-container matColumnDef="licenseType">
-          <mat-header-cell *matHeaderCellDef mat-sort-header>
-            license
-          </mat-header-cell>
-          <mat-cell *matCellDef="let element">
-            {{ element.licenseType }}
-          </mat-cell>
-        </ng-container>
 
-        <!-- Weight Column -->
-        <ng-container matColumnDef="descripcion">
-          <mat-header-cell *matHeaderCellDef mat-sort-header>
-            description
-          </mat-header-cell>
-          <mat-cell *matCellDef="let element">
-            {{ element.descripcion }}
-          </mat-cell>
-        </ng-container>
+      <ng-container matColumnDef="licenseType">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+          License
+        </mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          {{ element.licenseType }}
+        </mat-cell>
+      </ng-container>
 
-        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-        <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
-      </mat-table>
 
-      <mat-paginator
-        #paginator
-        [pageSize]="10"
-        [pageSizeOptions]="[5, 10, 20]"
-        [showFirstLastButtons]="true">
-      </mat-paginator>
+      <ng-container matColumnDef="descripcion">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+          description
+        </mat-header-cell>
+        <mat-cell *matCellDef="let element">
+          {{ element.descripcion }}
+        </mat-cell>
+      </ng-container>
 
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+    </mat-table>
+
+    <mat-paginator
+      #paginator
+      [pageSize]="10"
+      [pageSizeOptions]="[5, 10, 20]"
+      [showFirstLastButtons]="true"
+    >
+    </mat-paginator>
   </div>
-
 </div>
-
-
-
-
-

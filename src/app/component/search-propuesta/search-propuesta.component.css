@@ -1,0 +1,10 @@
+.container{
+  padding: 30px;
+}
+h1{
+  font-weight: bold;
+  color:#667080;
+}
+.back-button{
+  cursor: pointer;
+}

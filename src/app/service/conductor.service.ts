@@ -13,14 +13,12 @@ const baseUrl = environment.base;
 
 export class conductorService{
 
-  private urlDriver = `${baseUrl}/conductor`;//alt+96
+  private urlDriver = `${baseUrl}/conductor`;
 
-  constructor(private http:HttpClient) { } //inyectar httpClient
+  constructor(private http:HttpClient) { }
 
   listDrivers():Observable<any>{
     return this.http.get<conductor[]>(this.urlDriver)
   }
-
-
 }
 

@@ -14,7 +14,7 @@ import { conductor } from 'src/model/conductor';
 export class SearchPropuestaComponent implements OnInit {
 
   lista:conductor[]=[];
-  displayedColumns = ['name','lastName','license','descripcion'];
+  displayedColumns = ['name','lastName','licenseType','descripcion'];
   dataSource = new MatTableDataSource<conductor>();
 
   @ViewChild(MatPaginator) paginator : MatPaginator;

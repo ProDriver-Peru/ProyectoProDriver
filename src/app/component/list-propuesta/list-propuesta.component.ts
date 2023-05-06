@@ -54,8 +54,8 @@ export class ListPropuestaComponent implements OnInit {
 
   delete(id:string){
     this.propuestaService.delete(id).subscribe(()=>
-      this.router.navigate(['home/listarPropuesta']).then(()=>{
-        window.location.reload();
+      this.router.navigate(['home/inicio']).then(()=>{
+        //window.location.reload();
       })
     )
   }
